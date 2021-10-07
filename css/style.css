@@ -113,5 +113,8 @@ body .container nav #menu-section .menu:nth-of-type(2) {
   body .container {
     background-color: red;
   }
+  body .container nav #menu-section {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

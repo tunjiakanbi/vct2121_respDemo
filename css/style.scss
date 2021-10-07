@@ -94,6 +94,13 @@ padding-top: 25%;
 @media screen and (min-width: 834px){
     body .container {
         background-color: red;
+        nav {
+            #menu-section {
+                display: none;
+            }
+        }
     }
+    
+
     
 }
