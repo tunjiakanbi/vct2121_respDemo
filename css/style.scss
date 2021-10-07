@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap');
+
+// font-family: 'Roboto', sans-serif;
+$primary-light: #FFF;
+$primary-color: #175BF5;
+$primary-bckg: #D0DEFD;
+$primary-text: #273A63;
+$para-text: 1em;
+$para2-text: 0.65em;
+$heading-text : 2em;
+$heading2-text : 1.5em;
+$body-font: 'Roboto',
+sans-serif;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $primary-light;
+    color: $primary-text;
+    font-size: $para-text;
+    font-family: $body-font;
+
+    .container {
+        width: 100vw;
+        height: 100vh;
+        background-color: $primary-light;
+
+        nav {
+            position: relative;
+            height: 75px;
+            background-color: $primary-color;
+            display: flex;
+            align-items: center;
+            #brand-section {
+                display: flex;
+                flex-direction: column;
+                margin-left: 1.5em;
+                span {
+                    text-transform: uppercase;
+                    display: inline-block;
+                    color: $primary-light;
+                    font-size: $heading2-text;
+                }
+                span:nth-of-type(2){
+                    font-size: $para2-text;
+                }
+            }
+            #menu-section {
+                margin-left: auto;
+                margin-right: 1.5em;
+                display: flex;
+                flex-direction: column;
+                // height: 100%;
+                .menu {
+                    width: 40px;
+                    height: 0.2em;
+                    background-color: $primary-light;
+                    // display: inline-block;
+                }
+                .menu:nth-of-type(2) {
+                    margin: 0.3em 0;
+                }
+            }
+        }
+    }
+}
+#navigation {
+    display: none;
+    position: relative;
+    height: calc(100vh - 75px);  
+    background-color: $primary-color;
+    transition: display 2s ease-in-out;
+}
+#navigation ul {
+padding-top: 25%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+#navigation ul li a {
+    text-decoration: none;
+    color: $primary-bckg;
+    text-transform: uppercase;
+}
