@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap');
 
+
 // font-family: 'Roboto', sans-serif;
 $primary-light: #FFF;
 $primary-color: #175BF5;
@@ -88,4 +89,11 @@ padding-top: 25%;
     text-decoration: none;
     color: $primary-bckg;
     text-transform: uppercase;
+}
+
+@media screen and (min-width: 834px){
+    body .container {
+        background-color: red;
+    }
+    
 }

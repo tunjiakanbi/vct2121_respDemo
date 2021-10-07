@@ -108,4 +108,10 @@ body .container nav #menu-section .menu:nth-of-type(2) {
   color: #D0DEFD;
   text-transform: uppercase;
 }
+
+@media screen and (min-width: 834px) {
+  body .container {
+    background-color: red;
+  }
+}
 /*# sourceMappingURL=style.css.map */

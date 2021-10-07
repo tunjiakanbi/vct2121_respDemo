@@ -1,0 +1,35 @@
+:root {
+
+/* Colors: */
+--unnamed-color-2699fb: #2699FB;
+--unnamed-color-ffffff: #FFFFFF;
+
+/* Font/text values */
+--unnamed-font-family-arial: Arial;
+--unnamed-font-style-normal: normal;
+--unnamed-font-weight-bold: bold;
+--unnamed-font-size-10: 10px;
+--unnamed-font-size-15: 15px;
+--unnamed-character-spacing-0: 0px;
+--unnamed-line-spacing-12: 12px;
+}
+
+/* Character Styles */
+.arial-—-15pt {
+font-family: var(--unnamed-font-family-arial);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-bold);
+font-size: var(--unnamed-font-size-10);
+line-height: var(--unnamed-line-spacing-12);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-2699fb);
+}
+.unnamed-character-style-1 {
+font-family: var(--unnamed-font-family-arial);
+font-style: var(--unnamed-font-style-normal);
+font-weight: var(--unnamed-font-weight-bold);
+font-size: var(--unnamed-font-size-15);
+line-height: var(--unnamed-line-spacing-12);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-ffffff);
+}
