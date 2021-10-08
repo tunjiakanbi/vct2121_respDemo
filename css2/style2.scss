@@ -124,9 +124,9 @@ body {
 
 }
 // maybe
-// .button.secondary {
-//     border-bottom: 1px $primary-light solid;
-// }
+.button.secondary {
+    border-bottom: 1px $primary-light solid;
+}
 
 // Mobile Menu
 .menu {
@@ -168,6 +168,30 @@ body {
 .item {
     width: 100%;
     text-align: center;
-    order:3;
-    // display: none;
+    // order: 3;
+    display: none;
+}
+.item.active {
+  display: block;
+}
+
+// Tablet Menu
+@media all and (min-width:768px) {
+  .menu {
+    justify-content: center;
+  }
+  .logo {
+    flex: 1;
+  }
+  .item.button {
+    width: auto;
+    order: 1;
+    display: block;
+  }
+  .toggle {
+    order: 2;
+  }
+  .button.secondary {
+    
+  }
 }
