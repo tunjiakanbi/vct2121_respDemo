@@ -20,7 +20,6 @@ body .container {
 }
 
 body .container nav {
-  position: relative;
   height: 75px;
   background-color: #175BF5;
   display: -webkit-box;
@@ -76,9 +75,7 @@ body .container nav #menu-section .menu:nth-of-type(2) {
 }
 
 #navigation {
-  display: none;
   position: relative;
-  height: calc(100vh - 75px);
   background-color: #175BF5;
   -webkit-transition: display 2s ease-in-out;
   transition: display 2s ease-in-out;

@@ -31,7 +31,7 @@ body {
         background-color: $primary-light;
 
         nav {
-            position: relative;
+            // position: relative;
             height: 75px;
             background-color: $primary-color;
             display: flex;
@@ -70,9 +70,9 @@ body {
     }
 }
 #navigation {
-    display: none;
+    // display: none;
     position: relative;
-    height: calc(100vh - 75px);  
+    // height: calc(100vh - 75px);  
     background-color: $primary-color;
     transition: display 2s ease-in-out;
 }
