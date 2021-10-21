@@ -1,106 +1,107 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap');
 
-
 // font-family: 'Roboto', sans-serif;
 $primary-light: #FFF;
-$primary-color: #175BF5;
+$primary-color: #2699FB;
 $primary-bckg: #D0DEFD;
 $primary-text: #273A63;
 $para-text: 1em;
 $para2-text: 0.65em;
 $heading-text : 2em;
 $heading2-text : 1.5em;
-$body-font: 'Roboto',
-sans-serif;
+$body-font: 'Roboto',sans-serif;
 
+// reset css
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-body {
-    background-color: $primary-light;
-    color: $primary-text;
-    font-size: $para-text;
     font-family: $body-font;
-
-    .container {
-        width: 100vw;
-        height: 100vh;
-        background-color: $primary-light;
-
-        nav {
-            position: relative;
-            height: 75px;
-            background-color: $primary-color;
-            display: flex;
-            align-items: center;
-            #brand-section {
-                display: flex;
-                flex-direction: column;
-                margin-left: 1.5em;
-                span {
-                    text-transform: uppercase;
-                    display: inline-block;
-                    color: $primary-light;
-                    font-size: $heading2-text;
-                }
-                span:nth-of-type(2){
-                    font-size: $para2-text;
-                }
-            }
-            #menu-section {
-                margin-left: auto;
-                margin-right: 1.5em;
-                display: flex;
-                flex-direction: column;
-                // height: 100%;
-                .menu {
-                    width: 40px;
-                    height: 0.2em;
-                    background-color: $primary-light;
-                    // display: inline-block;
-                }
-                .menu:nth-of-type(2) {
-                    margin: 0.3em 0;
-                }
-            }
-        }
-    }
 }
-#navigation {
-    display: none;
-    position: relative;
-    height: calc(100vh - 75px);  
+
+.menu-wrap {
     background-color: $primary-color;
-    transition: display 2s ease-in-out;
-}
-#navigation ul {
-padding-top: 25%;
-    height: 80%;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    list-style-type: none;
+    height: 64px;
 }
-#navigation ul li a {
+.brand span {
+    display: block;
+    font-size: $heading2-text;
+    color: $primary-light;
+    margin-left: 1.5em;
+}
+.toggle {
+    width: 30px;
+    height: 21px;
+    // display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    // display: none;
+    margin-right: 1.5em;
+}
+.bar {
+    height: 3px;
+    width: 100%;
+    background-color: $primary-light;
+   
+}
+.nav-links {
+    display: flex;
+    margin-right: 1em;
+}
+.nav-links .items a {
     text-decoration: none;
-    color: $primary-bckg;
+    color: $primary-light;
+    // display: block;
+    padding: 1em;
     text-transform: uppercase;
 }
-
-@media screen and (min-width: 834px){
-    body .container {
-        background-color: red;
-        nav {
-            #menu-section {
-                display: none;
-            }
-        }
-    }
-    
-
-    
+.nav-links .items {
+    list-style: none;
+    padding: 0.75em 0;
 }
+li.items.sign {
+    border: 1px solid $primary-light;
+    border-radius: 0.75em;
+    padding: 0.75em 1em;
+}
+main {
+    height: 300vh;
+    background-color: $primary-light;
+}
+
+
+// mobile media query//////////////////////////////////////////////////////////
+@media all and (max-width: 768px){
+    .toggle {
+        display: flex;
+    }
+    .nav-links {
+        display: none;
+    }
+
+    .active {
+        display:flex;
+        flex-direction: column;
+        position: absolute;
+        top: 64px;
+        background-color: $primary-color;
+        width: 100%;
+        align-items: center;
+        height: calc(100vh - 64px);
+        justify-content: space-evenly;  
+        transition: all 2s linear; 
+    }
+    .nav-links .items {
+        margin: -6em 0;
+    }  
+}
+
+
+
+
+
+
