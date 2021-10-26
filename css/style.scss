@@ -10,7 +10,8 @@ $para-text: 1em;
 $para2-text: 0.65em;
 $heading-text: 2em;
 $heading2-text: 1.5em;
-$body-font: "Roboto", sans-serif;
+$body-font: "Roboto",
+sans-serif;
 
 // reset css
 * {
@@ -27,12 +28,14 @@ $body-font: "Roboto", sans-serif;
   align-items: center;
   height: 64px;
 }
+
 .brand span {
   display: block;
   font-size: $heading2-text;
   color: $primary-light;
   margin-left: 1.5em;
 }
+
 .toggle {
   width: 30px;
   height: 21px;
@@ -43,15 +46,18 @@ $body-font: "Roboto", sans-serif;
   // display: none;
   margin-right: 1.5em;
 }
+
 .bar {
   height: 3px;
   width: 100%;
   background-color: $primary-light;
 }
+
 .nav-links {
   display: flex;
   margin-right: 1em;
 }
+
 .nav-links .items a {
   text-decoration: none;
   color: $primary-light;
@@ -59,15 +65,18 @@ $body-font: "Roboto", sans-serif;
   padding: 1em;
   text-transform: uppercase;
 }
+
 .nav-links .items {
   list-style: none;
   padding: 0.75em 0;
 }
+
 li.items.sign {
   border: 1px solid $primary-light;
   border-radius: 0.75em;
   padding: 0.75em 1em;
 }
+
 main {
   //   height: 300vh;
   background-color: $primary-light;
@@ -75,10 +84,12 @@ main {
   #section1 {
     width: 80%;
     margin: 0 auto;
+
     h4 {
       margin: 1.5em 0 1.5em 0;
       color: $primary-grey;
     }
+
     .blue-lg {
       color: $primary-color;
       margin-bottom: 1em;
@@ -86,10 +97,12 @@ main {
       font-family: Georgia, "Times New Roman", Times, serif;
       font-size: 40px;
     }
+
     img {
       width: 100%;
       height: auto;
     }
+
     button {
       padding: 1.5em 3rem;
       display: inline-block;
@@ -105,6 +118,7 @@ main {
   #section2 {
     width: 80%;
     margin: 0 auto;
+
     .blue-lg {
       color: $primary-color;
       margin-bottom: 1em;
@@ -112,13 +126,65 @@ main {
       font-family: Georgia, "Times New Roman", Times, serif;
       font-size: 40px;
     }
+
     #img-section {
       width: 100%;
       margin: 0 auto;
-      display: grid;
+
+      // display: grid;
       img {
         width: 100%;
         height: auto;
+      }
+    }
+  }
+
+  #section-3 {
+    width: 80%;
+    margin: 0 auto;
+    .section-3-content {
+      margin-top: 2em;
+      padding: 3em;
+      div.section-3-headings {
+        // padding: 2em;
+        // border: 1px solid red;
+        display: flex;
+        align-items: center;
+
+        span.name {
+          margin-left: 0.5em;
+          font-weight: bold;
+          color: $primary-color;
+        }
+
+        span.hour {
+          margin-left: auto;
+          font-size: 0.75em;
+          color: $primary-grey;
+        }
+      }
+
+      p {
+        margin: 2.5em 0;
+        font-size: 0.75em;
+        color: $primary-grey;
+      }
+
+      img.photo {
+        width: 100%;
+        height: auto;
+      }
+
+      .section-3-footer {
+        display: flex;
+        align-items: center;
+        margin-top: 2em;
+
+        span.share {
+          margin-left: auto;
+          font-weight: bold;
+          color: $primary-color;
+        }
       }
     }
   }
@@ -129,6 +195,7 @@ main {
   .toggle {
     display: flex;
   }
+
   .nav-links {
     display: none;
   }
@@ -145,6 +212,7 @@ main {
     justify-content: space-evenly;
     transition: all 2s linear;
   }
+
   .nav-links .items {
     margin: -6em 0;
   }
@@ -152,6 +220,7 @@ main {
 
 @media all and (min-width: 768px) {
   #section2 {
+
     // background-color: red;
     #img-section {
       width: 100%;
@@ -159,7 +228,7 @@ main {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(3, 1fr);
-      grid-auto-flow: row;
+      // grid-auto-flow: row;
       gap: 0px 0px;
       grid-template-areas:
         "one two two"
@@ -169,21 +238,27 @@ main {
       #img-1 {
         grid-area: one;
       }
+
       #img-2 {
         grid-area: two;
       }
+
       #img-3 {
         grid-area: three;
       }
+
       #img-4 {
         grid-area: four;
       }
+
       #img-5 {
         grid-area: five;
       }
+
       #img-6 {
         grid-area: six;
       }
+
       #img-7 {
         grid-area: seven;
       }
@@ -193,62 +268,71 @@ main {
 
 
 
-//   css for .parent commented out in the html notice it uses background images
-.parent {
-  margin: 0 auto;
-  width: 900px;
-  height: 900px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 1px;
-  grid-row-gap: 1px;
-  .div1 {
-    grid-area: 1 / 1 / 2 / 2;
-    background-color: yellow;
-  }
-  .div2 {
-    grid-area: 1 / 2 / 2 / 4;
-    background-color: orange;
-  }
-     .div3 {
-    grid-area: 2 / 1 / 4/ 2;
-    background-color: red;
-   }
-     .div4 {
-    grid-area: 2 / 2 / 3/ 3;
-    background-color: purple;
-   }
-     .div5 {
-    grid-area: 2 / 3 / 3/ 4;
-    background-color: blue;
-   }
-     .div6 {
-    grid-area: 3 / 2 / 4/ 3;
-    background-color: green;
-   }
-     .div7 {
-    grid-area: 3 / 3 / 4/ 4;
-    background-color: yellowgreen;
-   }
-}
+  //   css for .parent commented out in the html notice it uses background images
+  .parent {
+    margin: 0 auto;
+    width: 900px;
+    height: 900px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
 
-//   css for container commented out in the html notice it uses background images
-.container {
+    .div1 {
+      grid-area: 1 / 1 / 2 / 2;
+      background-color: yellow;
+    }
+
+    .div2 {
+      grid-area: 1 / 2 / 2 / 4;
+      background-color: orange;
+    }
+
+    .div3 {
+      grid-area: 2 / 1 / 4/ 2;
+      background-color: red;
+    }
+
+    .div4 {
+      grid-area: 2 / 2 / 3/ 3;
+      background-color: purple;
+    }
+
+    .div5 {
+      grid-area: 2 / 3 / 3/ 4;
+      background-color: blue;
+    }
+
+    .div6 {
+      grid-area: 3 / 2 / 4/ 3;
+      background-color: green;
+    }
+
+    .div7 {
+      grid-area: 3 / 3 / 4/ 4;
+      background-color: yellowgreen;
+    }
+  }
+
+  //   css for container commented out in the html notice it uses background images
+  .container {
     width: 100%;
     height: 100%;
+    height: 900px;
+
     div {
       border: 3px solid red;
     }
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
-    grid-template-areas:
-      "one two two"
-      "three four five"
-      "three six seven";
+    grid-template-areas: "one two two"
+    "three four five"
+    "three six seven";
   }
 
   .one {
@@ -287,5 +371,18 @@ main {
   }
 }
 
-
+@media screen and (min-width: 768px) and (max-width:1023px){
+  #section-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #section-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  }
+}
 
