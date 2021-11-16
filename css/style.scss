@@ -153,10 +153,13 @@ main {
   #section-3 {
     width: 80%;
     margin: 0 auto;
+    overflow: hidden;
 
     .section-3-content {
       margin-top: 2em;
       padding: 3em;
+      padding: 1em;
+      // width: 25%;
 
       div.section-3-headings {
         // padding: 2em;
@@ -232,6 +235,7 @@ main {
 }
 
 @media all and (min-width: 768px) {
+  
   #section2 {
     // background-color: red;
     #img-section {
@@ -380,23 +384,34 @@ main {
   //     background-image: url("/images/Rectangle 433.png");
   //   }
   // }
-
+// tablet
   @media screen and (min-width: 768px) and (max-width: 1023px) {
     #section-3 {
+      width: 100vw !important;
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
     }
+    main #section2 {
+      width: 100vw !important;
+    }
   }
-
+// desktop
   @media screen and (min-width: 1024px) {
     #section-3 {
+      width: 100vw !important;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr;
+      img.photo {
+        width: 100%;
+        height: auto;
+      }
     }
 
     main #section2 {
+      // width: 100vw;
+      width: 100vw !important;
       display: flex;
       padding: 5rem;
       p {
@@ -406,8 +421,14 @@ main {
       #img-section {
         width:calc(60% - 4rem);
         height: calc(60% - 4rem);
+        width:60%;
+        height: 60%;
         padding: 2rem;      
       }
+    }
+    main #section-3 .section-3-content {
+      padding: 3em;
+      width: 100%;
     }
   }
 

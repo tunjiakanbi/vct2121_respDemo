@@ -134,11 +134,13 @@ main #section2 #img-section img {
 main #section-3 {
   width: 80%;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 main #section-3 .section-3-content {
   margin-top: 2em;
   padding: 3em;
+  padding: 1em;
 }
 
 main #section-3 .section-3-content div.section-3-headings {
@@ -240,19 +242,29 @@ main #section-3 .section-3-content .section-3-footer span.share {
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   #section-3 {
+    width: 100vw !important;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  main #section2 {
+    width: 100vw !important;
   }
 }
 
 @media screen and (min-width: 1024px) {
   #section-3 {
+    width: 100vw !important;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
+  #section-3 img.photo {
+    width: 100%;
+    height: auto;
+  }
   main #section2 {
+    width: 100vw !important;
     display: flex;
     padding: 5rem;
   }
@@ -263,7 +275,13 @@ main #section-3 .section-3-content .section-3-footer span.share {
   main #section2 #img-section {
     width: calc(60% - 4rem);
     height: calc(60% - 4rem);
+    width: 60%;
+    height: 60%;
     padding: 2rem;
+  }
+  main #section-3 .section-3-content {
+    padding: 3em;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
